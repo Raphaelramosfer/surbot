@@ -1,0 +1,327 @@
+	/* Reset */
+
+body, h1, h2, h3, p, ul, li,a {
+	padding: 0px;
+	margin: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	font-family: 'alice', serif;
+	color: #252525;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a { text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+
+/* Menu */
+
+
+
+.header-mini {
+	background-color: #1188EE;
+	text-align: center;
+	color: #fff;
+	font-family:nunito ;
+}
+
+.header-bg {
+	background: #17222D;
+}
+
+.menu {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 15px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu a {
+	color: white;
+	font-family: 'nunito';
+}
+
+.header-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header-nav a {
+	font-size: 1.125em;
+	display: block;
+	padding: 10px;
+}
+
+.header-nav ul li a:hover {
+	color: #1188EE;
+}
+
+.header-nav li a::before {
+	content: '•';
+	padding-right: 10px;
+}
+
+.introducao {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.introducao {
+	background: url('../img/bg-intro.jpg') no-repeat center;
+	background-size: cover;
+	height: 400px;
+	margin-bottom: 40px;
+}
+
+.introducao h1 {
+	color: white;
+	font-size: 4.5em;
+	padding-left: 50px;
+	margin-top: 200px;
+	font-weight: 400;
+}
+
+.formulario {
+	margin-top: 280px;
+	max-width: 460px;
+	height: 50px;
+	display: flex;
+}
+
+.formulario input {
+	font-family: 'nunito';
+	font-size: 1.25em;
+	color: #7c7c7c;
+	padding: 10px ;
+	border-radius: 5px;
+}
+
+.formulario button {
+	font-family: 'nunito';
+	color: #fff;
+	background-color: #EE2211;
+	font-size: 1.125em;	
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-right: 50px;
+	flex-wrap: nowrap;
+}
+
+/* grade imagens */
+
+
+.grade {
+	display: flex;
+	justify-content: space-between;
+	height: 970px;
+}
+
+.grade-img {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.img-mapa {
+	margin-left: 70px;
+	position: relative;
+	top: -150px;
+	display: flex;
+	display: inline-block;	
+}
+
+.grade h1 {
+	font-size: 4.5em;
+	font-weight: 400;
+	width: 520px;
+	height: 220px;
+	margin-bottom: 40px;
+	margin-right: 60px;
+}
+
+.icones {
+	max-width: 470px;
+	height: 370px;
+	flex-direction: column;
+	padding-top: 60px;
+	align-items: center;
+}
+
+.icones h2 {
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+.img-icones {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.grade-info, h3 {
+	margin-left: 70px;
+	margin-bottom: 20px;
+}
+
+.grade p {
+	width: 480px;
+	height: 260px;
+	font-family: 'nunito';
+	font-size: 1.125em;
+	color: #445566;
+	margin-top: 50px;
+}
+
+.grade h3::before {
+	content: '';
+	display: inline-block;
+	justify-content: center;
+	width: 5px;
+	height: 5px;
+	background-color: #C4C4C4;
+	border-radius: 5px;
+	box-shadow: 0 0 0 3px #EE2211;
+	margin-right: 5px;
+	margin-left: 10px;
+}
+
+.grade h3 {
+	font-size: 1.125em;
+	font-style: bold;
+	font-family: 'nunito';
+	margin-left: 70px;
+}
+
+.grade-info li::before {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 3px;
+	background-color: #1188EE;
+	margin-right: 5px;
+	margin-left: 7px;
+}
+
+.grade-info li {
+	font-family: 'nunito';
+	color: #92979A;
+	
+}
+
+.grade-info li b {
+	color: black;
+	margin-right: 10px;
+}
+
+.locais {
+	position: relative;
+	top: -100px;
+}
+
+/* divisão */
+/* divisão */
+
+.ondas img {
+	margin: 0 auto;
+	margin-bottom: 40PX;
+}
+
+.aula {
+	display: flex;
+}
+
+.aula h2 {
+	margin: 0 auto;
+	font-family: 'nunito';
+	font-weight: 200;
+	font-size: 4.5em;
+	color: #445566;
+}
+
+/* PREÇO */ 
+
+
+.grade-preco {
+	display: flex;
+	background-color: #EFF4F9;
+	padding: 60px;
+	flex-wrap: wrap;
+}
+
+.preco-item {
+	flex: 1;
+	background-color: #fff;
+	box-shadow: rgb(240, 235, 235)  0 0 0 2px;
+	border: solid #fff ;
+	padding: 20px;
+	margin: 20px;
+}
+
+
+.preco-item img {
+	display: inline-block;
+	padding: 10px 5px;
+}
+
+.grade-preco h2 {
+	text-align: center;
+	font-size: 1.5em;
+	font-family: 'nunito';
+	text-transform: uppercase;
+	margin: 30px;
+	color: #445566;
+}
+
+.preco-colum {
+	text-align:start;
+	font-size: 0.9em;
+	color: #445566;
+	padding: 10px;
+	font-family: 'nunito';
+	font-weight:500;
+}
+
+.preco-colum li {
+	margin: 20px;
+}
+
+.grade-preco p {
+	color: #1188EE;
+	font-weight: bold;
+	text-align: start;
+	padding-left: 20px;
+}
+
+.grade-preco button {
+	width: 200px;
+	height: 20px;
+	padding: 20px;
+	margin-bottom: 0px;
+	background-color: #445566;
+	border-radius: 4px;	
+}
+
+
+
+
