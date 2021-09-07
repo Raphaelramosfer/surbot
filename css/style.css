@@ -1,6 +1,6 @@
 	/* Reset */
 
-body, h1, h2, h3, p, ul, li,a {
+body, h1, h2, h3, h4, h5, h6, p, ul, li,a {
 	padding: 0px;
 	margin: 0px;
 }
@@ -145,7 +145,7 @@ a { text-decoration: none;
 }
 
 .img-mapa {
-	margin-left: 70px;
+	margin-left: 75px;
 	position: relative;
 	top: -150px;
 	display: flex;
@@ -169,14 +169,18 @@ a { text-decoration: none;
 	align-items: center;
 }
 
-.icones h2 {
-	display: inline-block;
-	margin-bottom: 40px;
+.grade-icones {
+	display: flex;
+	margin-top: 30px;
 }
 
-.img-icones {
-	display: inline-block;
-	margin-right: 30px;
+.icones h4 {
+	font-size: 1.5em;
+	align-self:center;
+	margin-left: 30px;
+	font-family: 'nunito';
+	color: #445566;
+	font-weight: 500;
 }
 
 .grade-info, h3 {
@@ -193,17 +197,29 @@ a { text-decoration: none;
 	margin-top: 50px;
 }
 
-.grade h3::before {
-	content: '';
+ .grade h3::before {
+	content: '';   
 	display: inline-block;
-	justify-content: center;
-	width: 5px;
-	height: 5px;
-	background-color: #C4C4C4;
-	border-radius: 5px;
-	box-shadow: 0 0 0 3px #EE2211;
+    width: 5px;
+    height: 5px;
+    background: #c4c4c4;
+    border-radius: 50%;
+    border: 3px solid #EE2211;
+    box-shadow: 0 0 0 5px currentColor;
 	margin-right: 5px;
-	margin-left: 10px;
+	margin-left: 7px;
+	color: transparent;
+}  
+
+.locais li::before {
+	content: '';   
+	display: inline-block;
+    width: 7px;
+	height: 0px;
+    border: 1px solid #1188EE;
+	margin-right: 5px;
+	margin-left: 7px;
+	margin-bottom: 4px;
 }
 
 .grade h3 {
@@ -211,22 +227,13 @@ a { text-decoration: none;
 	font-style: bold;
 	font-family: 'nunito';
 	margin-left: 70px;
-}
-
-.grade-info li::before {
-	content: '';
-	display: inline-block;
-	width: 10px;
-	height: 3px;
-	background-color: #1188EE;
-	margin-right: 5px;
-	margin-left: 7px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 
 .grade-info li {
 	font-family: 'nunito';
-	color: #92979A;
-	
+	color: #92979A;	
 }
 
 .grade-info li b {
@@ -239,7 +246,6 @@ a { text-decoration: none;
 	top: -100px;
 }
 
-/* divisão */
 /* divisão */
 
 .ondas img {
@@ -261,7 +267,6 @@ a { text-decoration: none;
 
 /* PREÇO */ 
 
-
 .grade-preco {
 	display: flex;
 	background-color: #EFF4F9;
@@ -272,7 +277,7 @@ a { text-decoration: none;
 .preco-item {
 	flex: 1;
 	background-color: #fff;
-	box-shadow: rgb(240, 235, 235)  0 0 0 2px;
+	box-shadow: rgb(240, 235, 235)  0 0 0 4px;
 	border: solid #fff ;
 	padding: 20px;
 	margin: 20px;
@@ -282,6 +287,12 @@ a { text-decoration: none;
 .preco-item img {
 	display: inline-block;
 	padding: 10px 5px;
+}
+
+.preco-logo {
+	position: relative;
+	top: -50px;
+	text-align: center;	
 }
 
 .grade-preco h2 {
@@ -315,13 +326,192 @@ a { text-decoration: none;
 
 .grade-preco button {
 	width: 200px;
-	height: 20px;
-	padding: 20px;
-	margin-bottom: 0px;
+	height: 50px;
+	margin-left: 20px;
 	background-color: #445566;
 	border-radius: 4px;	
 }
 
+.preco-colum li::before {
+	content: '';   
+	display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #c4c4c4;
+    border-radius: 50%;
+    border: 3px solid #EE2211;
+    box-shadow: 0 0 0 5px currentColor;
+	margin-right: 5px;
+	margin-left: 7px;
+	color: transparent;
+}
 
+.preco-final p {
+	width: 400px;
+	text-align: center;
+	height: 40px;
+	display: block;
+	font-weight: regular;	
+	color: #445566;
+	font-family: 'nunito';
+}
 
+.bg-intro {
+	background: url('../img/foto-quote.jpg') no-repeat center;
+	background-size: cover;
+	height: 500px;
+	margin-bottom: 20px;
+}
 
+.cite {
+	font-family: 'alice';
+	color: #fff;
+	font-size: 4.5em;
+	text-align: center;
+	display: block;
+	padding-top: 80px;
+}
+
+.autor {
+	color: #fff;
+	font-family: 'nunito';
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	display: block;
+	margin-top: 50px;
+}
+
+/* CONTATO */
+/* CONTATO */
+
+.contato {
+	display: flex;
+	justify-content: space-between;
+}
+
+.intro-contato h2 {
+	text-align: center;
+	color: #445566;
+	font-size: 4.5em;
+	font-family: 'alice';
+	font-weight: 200;
+}
+
+.grade-form {
+	margin-left: 50px;
+}
+
+.contato-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contato-form label {
+	font-family: 'nunito';
+	font-size: 1.125em;
+	color: #445566;
+	font-weight: bold;
+}
+
+.contato-form input {
+	width: 470px;
+	height: 50px;
+	margin-bottom: 20px;
+	background-color: #EFF4F9;
+	box-shadow: 1px 1px 5px;
+	border: none;
+}
+
+.contato-form input:last-child {
+	width: 230px;
+	height: 50px;
+	border-radius: 4px;
+}
+
+.btn:last-child {
+	color: #fff;
+	width: 50px;
+	text-align: center;
+	height: 40px;
+	font-weight: regular;	
+	background-color: #445566;
+	font-family: 'nunito';
+}
+
+.contato-form textarea {
+	width: 470px;
+	height: 150px;
+	margin-bottom: 20px;
+	background-color: #EFF4F9;
+	box-shadow: 1px 1px 5px;
+	border: none;
+}
+
+.grade-end {
+	width: 520px;
+	height: 400px;
+}
+
+.grade-end h5,.end-map{
+	font-weight: bold;
+	font-family: 'nunito';
+	color:#445566;
+	font-size: 1.125em;
+	margin: 0px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.end-map::after {
+	content: ' ➤';   
+	display: inline-block;
+	color: #EE2211;
+	margin-left: 10px;
+}
+
+.grade-end ul li,.text-end {
+
+	color: #445566;
+	font-family: 'unito';
+	margin-left: 20px;
+}
+
+.horario {
+	font-weight: bold;
+	font-family: 'nunito';
+	color:#445566;
+	font-size: 1.125em;
+}
+
+.horario::before {
+	content: '';   
+	display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #c4c4c4;
+    border-radius: 50%;
+    border: 3px solid #16c70b;
+    box-shadow: 0 0 0 5px currentColor;
+	margin-right: 5px;
+	margin-left: 7px;
+	color: transparent;
+
+}
+
+.grade-end ul {
+	margin-bottom: 40px;
+}
+
+.footer {
+	background-color: #1188EE;
+	height: 100px;
+}
+
+.footer p {
+	font-family: 'nunito';
+	font-weight: bold;
+	color: #fff;
+	margin-left: 40px;
+	padding-top: 40px;
+}

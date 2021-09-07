@@ -49,15 +49,15 @@
 	</section>
 
 	<section class="grade">
-		<div style="border: 1px solid red;">
+		<div>
 			<img class="grade-img" src="img/foto-galeria.jpg" alt="">
 			<img class="img-mapa" src="img/mapa.jpg" alt="">
 			<div class="locais">
-				<div style="border: 1px solid red;">
-					<h3 style="border: 1px solid red;"> como chegar</h3>
+				<div>
+					<h3>Como chegar</h3>
 				</div>
-				<ul style="border: 1px solid red;" class="grade-info">
-					<li style="border: 1px solid red;"><b>Carro:</b>Pela via lucio Costa sentido Barra</li>
+				<ul class="grade-info">
+					<li><b>Carro:</b>Pela via lucio Costa sentido Barra</li>
 					<li><b>Onibus:</b> 233, 138, 189, 133</li>
 					<li><b>Metro: </b>Linha azul sentido Zona sul</li>
 			</div>
@@ -70,19 +70,19 @@
 				prias do Rio.
 			</h1>
 			<ul class="icones">
-				<li>
+				<li class="grade-icones">
 					<img class="img-icones" src="img/sandalhas.svg" alt="">
-					<h2>restaurante a beira mar</h2>
+					<h4>restaurante a beira mar</h4>
 				</li>
 
-				<li>
+				<li class="grade-icones">
 					<img class="img-icones" src="img/coco.svg" alt="">
-					<h2>restaurante a beira mar</h2>
+					<h4>restaurante a beira mar</h4>
 				</li>
 
-				<li>
+				<li class="grade-icones">
 					<img class="img-icones" src="img/boia.svg" alt="">
-					<h2>salva-vidas a cada 300m</h2>
+					<h4>salva-vidas a cada 300m</h4>
 				</li>
 			</ul>
 			<p>m ao salto para a editoração eletrônica, permanecendo
@@ -108,7 +108,9 @@
 
 	<section class="grade-preco">
 		<div class="preco-item">
-			<img src="img/surfbot-icon.svg" alt="">
+			<div class="preco-logo">
+				<img src="img/surfbot-icon.svg" alt="">
+			</div>
 			<h2>infantil</h2>
 
 			<ul class="preco-colum">
@@ -122,8 +124,10 @@
 		</div>
 
 		<div class="preco-item">
-			<img src="img/surfbot-icon.svg" alt="">
-			<img src="img/surfbot-icon.svg" alt="">
+			<div class="preco-logo">
+				<img src="img/surfbot-icon.svg" alt="">
+				<img src="img/surfbot-icon.svg" alt="">
+			</div>
 			<h2>Adulto</h2>
 			<ul class="preco-colum">
 				<li>Publico entre 18 e 80 anos</li>
@@ -136,23 +140,75 @@
 		</div>
 
 		<div class="preco-item">
-			<img src="img/surfbot-icon.svg" alt="">
-			<img src="img/surfbot-icon.svg" alt="">
-			<img src="img/surfbot-icon.svg" alt="">
+			<div class="preco-logo">
+				<img src="img/surfbot-icon.svg" alt="">
+				<img src="img/surfbot-icon.svg" alt="">
+				<img src="img/surfbot-icon.svg" alt="">
+			</div>
 			<h2>Profissional</h2>
 			<ul class="preco-colum">
-				<li>Publico entre 5 e 15 anos</li>
-				<li>Equipamentos fornecidos</li>
-				<li>Horarios de sex a sab.</li>
-				<li>2 horas seguidas de aula</li>
+				<li>Experiência de 3 anos no surf</li>
+				<li>Você deve trazer o equipamento</li>
+				<li>Horários de Sex. à Sab.</li>
+				<li>4 horas seguidas de aula</li>
 			</ul>
-			<p> R$ 49,00 / Aula</p>
+			<p class="valor"> R$ 49,00 / Aula</p>
 			<button type="submit">Matricule-se ➤</button>
 		</div>
-
-
+		<div class="preco-final container">
+			<p>possui um grupo de mais de 3 pessoas ?<br>
+				entre em contato para um desconto personalizado.</p>
+		</div>
 	</section>
 
+	<div class="bg-intro">
+		<q  class="cite"> O surf  libera as <br>
+			ondas de uma vida. </q>
+			<p class="autor">Regis Perreira</p>
+		</div>
+
+		<div class="intro-contato">
+			<h2>Contato</h2>
+		</div>
+
+		<section class="contato">
+
+			<div class=grade-form>
+				<form class="contato-form">
+					<label>Nome</label>
+					<input type="text">
+					<label>E-mail</label>
+					<input type="text">
+					<label>Mensagem</label>
+					<textarea></textarea>
+					<input class="btn" type="button" value="Enviar Mensagem ➤">
+				</form>
+			</div>
+
+			<div class="grade-end">
+				<h5>Edereço</h5>
+				<ul>
+					<li>Pria mansa n° 47</li>
+					<li>Rio de janeiro - RJ</li>
+					<li>Procure a barraca vermelha</li>
+				</ul>
+				<a class="end-map" href="">VER NO MAPA</a>
+
+				<h5>E-mail & Telefone</h5>
+				<ul>
+					<li>contato@surfbot.com</li>
+					<li>21 - 9999-9999</li>
+				</ul>
+
+				<p class="horario">Horário</p>
+				<p class="text-end">De sexta a Domingo<br> das 6:00 as 14:00</p>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<p>Surfnet 2021 - Alguns direitos reseervados..</p>
+		</footer>
+	
 </body>
 
 </html>
